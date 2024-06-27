@@ -1,5 +1,7 @@
 # Mix
-In this repository you may find some codes which are not directly related to physics or to the other repositories. Some of them are not optimized and they might be slow but they all work and the outputs were my main motivation to develop the codes rather than any useful purpose.
+In this repository you may find some codes which are not directly related to physics or to the other repositories. Some of them are not optimized and they might be slow but they all work and the outputs were the main motivation to develop the codes rather than any useful purpose.
+
+Barnsley_Fern.py constructs and represents a fractal structure which has the shape of a fern using an iterated function system.
 
 Maze.py attempts to create a square maze building a random walk. It shows a nice output of the maze which becomes even more exotic for very large sizes, however the computation time might take too much time in that case. Besides, the solution may not even have a solution, but the code is quite easy to play with and you may complete it as you wish.
 
