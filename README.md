@@ -17,6 +17,8 @@ Mandelbrot.py
 
 Maze.py creates a square maze building a random walk. It shows a nice output of the maze which becomes even more exotic for very large sizes, however the computation time might take too much time in that case. Besides, the solution may not even have a solution, but the code is quite easy to play with and you may complete it as you wish.
 
+Pendulum_Spring.py 
+
 Sieve_of_Eratosthenes.py builds the algorithm to obtain all the prime numbers smaller than any integer number. The [sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) is based on 5 simple steps, but we actually implement a modification of the algorithm for an optimized version. This algorithm has many applications, one of them is the Goldbach conjecture and, within this repository, is used in the Spiral.py code.
 
 Sounds.py is a very simple code to read and analyze a .wav file. It is just a kind of example of how to work with the FFT function and shows the wave and the spectrum of frequencies of the sound. As it was uploaded it reads a .wav file which is a LA (only the fundamental 440 Hz) note extracted from youtube (YT).
