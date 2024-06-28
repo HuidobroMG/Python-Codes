@@ -1,7 +1,7 @@
 # Codes description
 In this repository you may find some codes which are not directly related to physics or to the other repositories. Some of them are not optimized and they might be slow but they all work and the outputs were the main motivation to develop the codes rather than any useful purpose.
 
-[Barnsley_Fern.py](./Barnsley_Fern.py) constructs and represents a specific fractal structure which has the shape of a fern, known as the Barnsley fern. The code applies an iterated function system (IFS) using the appropriate affine transformations, available in [Wikipedia](https://en.wikipedia.org/wiki/Barnsley_fern).
+[Barnsley_Fern.py](Python-Codes/Barnsley_Fern.py) constructs and represents a specific fractal structure which has the shape of a fern, known as the Barnsley fern. The code applies an iterated function system (IFS) using the appropriate affine transformations, available in [Wikipedia](https://en.wikipedia.org/wiki/Barnsley_fern).
 
 Casino.py
 
