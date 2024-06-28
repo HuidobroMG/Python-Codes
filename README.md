@@ -1,7 +1,9 @@
-# Mix
+# Codes description
 In this repository you may find some codes which are not directly related to physics or to the other repositories. Some of them are not optimized and they might be slow but they all work and the outputs were the main motivation to develop the codes rather than any useful purpose.
 
-Barnsley_Fern.py constructs and represents a fractal structure which has the shape of a fern using an iterated function system.
+[Barnsley_Fern.py](Barnsley_Fern.py) constructs and represents a specific fractal structure which has the shape of a fern, known as the Barnsley fern. The code applies an iterated function system (IFS) using the appropriate affine transformations, available in [Wikipedia](https://en.wikipedia.org/wiki/Barnsley_fern).
+
+Casino.py
 
 Maze.py attempts to create a square maze building a random walk. It shows a nice output of the maze which becomes even more exotic for very large sizes, however the computation time might take too much time in that case. Besides, the solution may not even have a solution, but the code is quite easy to play with and you may complete it as you wish.
 
