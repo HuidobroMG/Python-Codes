@@ -13,17 +13,17 @@ Flock.py simulates the emergent flocking effect in nature, as it occurs for bird
 
 Game_of_Life.py generates the famous [Conway's game of life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). The game starts with a random configuration and the time flows following the 4 standard rules, the life of the cells is shown animated in time.
 
+Guitar_String.py solves an extended version of the wave equation with two additional dispersive term. The effect of these terms is the generation of a more realistic guitar string sound. The solution to the equation is taken, shown as an animation (which may also be saved as a GIF) and converted into sound, so a .wav file is created. This code is mainly based on the solution given and explained in the following [YT video](https://www.youtube.com/watch?v=MavAU3adGk4).
+
 Mandelbrot.py [Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set).
 
-Maze.py creates a square maze building a random walk. It shows a nice output of the maze which becomes even more exotic for very large sizes, however the computation time might take too much time in that case. Besides, the solution may not even have a solution, but the code is quite easy to play with and you may complete it as you wish.
+Maze.py creates a square figure which aims to simulate a maze. The algorithm implements a random walk combined with some simple [rules](https://en.wikipedia.org/wiki/Maze_generation_algorithm) standard in the maze construction. The output becomes even more exotic for very large sizes, however the computation time might take too much time in that case. Besides, the solution may not even have a solution, but the code is quite easy to play with and you may complete it as you wish.
 
 Pendulum_Spring.py 
 
 Sieve_of_Eratosthenes.py builds the algorithm to obtain all the prime numbers smaller than any integer number. The [sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) is based on 5 simple steps, but we actually implement a modification of the algorithm for an optimized version. This algorithm has many applications, one of them is the Goldbach conjecture and, within this repository, is used in the Spiral.py code.
 
 Sound_Decomposition.py is a very simple code to read and analyze a .wav file. It is just a kind of example of how to work with the FFT function and shows the wave and the spectrum of frequencies of the sound. As it was uploaded it reads a .wav file which is a LA (only the fundamental 440 Hz) note extracted from youtube (YT).
-
-String.py solves an extended version of the wave equation with two additional dispersive term. The effect of these terms is the generation of a more realistic guitar string sound. The solution to the equation is taken, shown as an animation (which may also be saved as a GIF) and converted into sound, so a .wav file is created. This code is mainly based on the solution given and explained in the following [YT video](https://www.youtube.com/watch?v=MavAU3adGk4).
 
 Prime_Spiral.py
 
