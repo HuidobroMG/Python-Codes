@@ -1,7 +1,7 @@
 # Repository description
-In this repository you may find multiple Python codes which do not fit in the other repositories, but still they are have interesting outputs and applications. Some of them are not optimized, but they all work and the results were the main motivation to develop the codes rather than any specific purpose.
+In this repository you may find multiple Python codes (in .py format) related to different topics. The do not have a specific purpose, but still they have interesting outputs and applications. Some of them might be further optimized, however, they all work and the outcomes were the main motivation to develop the codes rather than any practical application.
 
-Barnsley_Fern.py constructs and represents a specific fractal structure which has the shape of a fern, known as the Barnsley fern. The code applies an iterated function system (IFS) using the appropriate affine transformations, available in [Wikipedia](https://en.wikipedia.org/wiki/Barnsley_fern).
+[Barnsley_Fern.py](https://github.com/HuidobroMG/Python-Codes/blob/main/Barnsley_Fern.py) constructs and represents a specific fractal structure which has the shape of a fern, known as the Barnsley fern. The code applies an iterated function system (IFS) using the appropriate affine transformations, available in [Wikipedia](https://en.wikipedia.org/wiki/Barnsley_fern).
 
 Casino.py simulates the Roulette game in a casino and represents the results of long term profits and losses for different possible bets: Red/Black, 1 dozen or 2 dozens.
 
