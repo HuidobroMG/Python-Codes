@@ -12,51 +12,54 @@ the money bet is the double, then the losses are larger, so it has a larger (in 
 """
 
 # Import the modules
-import numpy as np
 import random as rn
+import numpy as np
 import matplotlib.pyplot as plt
 import scipy.optimize as scop
 
 # Parameters
-money = 50 # Euros
+MONEY = 50 # Euros
 N = int(1e6) # Number of bets
-bet = 1 # Bet money
+BET = 1 # Bet money
 
 # Red or black bet
 counts = np.zeros(N)
 for i in range(N):
-    counts[i] = money
-    money -= bet # The bet starts
+    counts[i] = MONEY
+    MONEY -= BET # The bet starts
     r = rn.randint(0, 36) # The ball is thrown
     if r%2 == 0 and r != 0: # If even, you win
-        money += 2
+        MONEY += 2
 
 plt.plot(counts, 'b-', label = 'Red/Black')
 
 def line(x, m, n):
+    """
+    Computes the line y = mx + n
+    """
     return m*x + n
 
 sols = scop.curve_fit(line, np.arange(N), counts)
-m, n = sols[0]
-print('Slope of the red/black line =', np.round(m, 4))
+m_rb, n_rb = sols[0]
+print('Slope of the red/black line =', np.round(m_rb, 4))
 
-plt.plot(m*np.arange(N) + n, 'k-')
+plt.plot(m_rb*np.arange(N) + n_rb, 'k-')
 
 # One and two dozens bet
 counts_1 = np.zeros(N)
 counts_2 = np.zeros(N)
-money_1 = 50
-money_2 = 50
+MONEY_1 = 50
+MONEY_2 = 50
 for i in range(N):
-    counts_1[i] = money_1
-    counts_2[i] = money_2
-    money_1 -= bet
-    money_2 -= 2*bet
+    counts_1[i] = MONEY_1
+    counts_2[i] = MONEY_2
+    MONEY_1 -= BET
+    MONEY_2 -= 2*BET
     r = rn.randint(0, 36) # The ball is thrown
     if 1 <= r <= 12:
-        money_1 += 3
+        MONEY_1 += 3
     if 1 <= r <= 24:
-        money_2 += 3
+        MONEY_2 += 3
 
 sols = scop.curve_fit(line, np.arange(N), counts_1)
 m_1, n_1 = sols[0]
