@@ -20,21 +20,28 @@ Ns = 20 # Number of topics that we have studied
 Nns = Nt - Ns # Number of topic that we have not studied
 
 # Factorial function
-def factorial(i):
+def factorial(number):
+    """
+    Computes the factorial of a number number
+    """
     f = 1
-    for l in range(i, 1, -1):
-        f *= l
+    for n in range(number, 1, -1):
+        f *= n
     return f
 
 # Combinatory of two numbers
-def combin(i,j):
-    # i > j
-    return factorial(i)/(factorial(j)*factorial(i-j))
+def combinatorial(number_1, number_2):
+    """
+    Computes the combinatory of two numbers: C(number_1, number_2)
+    where number_1 >= number_2
+    0 <= number_2 <= number_1
+    """
+    return factorial(number_1)/(factorial(number_2)*factorial(number_1-number_2))
 
 # Probabilities that at least 1 of the Nb balls has 1 of the Ns studied topics: p1, p2
 
 # Computing the opposite and substracting it to 1
-def p1(Nb, Nt, Nns):
+def proba_1(Nb, Nt, Nns):
     p = 1
     for i in range(Nb):
         p *= (Nns - i)/(Nt - i)
@@ -45,7 +52,7 @@ def p1(Nb, Nt, Nns):
 # The next cases are: 2, 3, 4... of the Nb balls have studied topics
 # The last case is: all the balls have studied topics
 # In each case we must compute all the possible combinations
-def p2(Nb, Nt, Ns, Nns):    
+def proba_2(Nb, Nt, Ns, Nns):    
     p = []
     p_i = 1
     for i in range(1, Nb+1):
@@ -66,8 +73,8 @@ def p2(Nb, Nt, Ns, Nns):
     return np.sum(p)
 
 # Print the two probabilities
-print('p1 = ', np.round(p1(Nb, Nt, Nns)*100, 3), '%')
-print('p2 = ', np.round(p2(Nb, Nt, Ns, Nns)*100, 3), '%')
+print('p1 = ', np.round(proba_1(Nb, Nt, Nns)*100, 3), '%')
+print('p2 = ', np.round(proba_2(Nb, Nt, Ns, Nns)*100, 3), '%')
 
 # Plot how the probabilities change with the number of balls and studied topics
 Nb = np.arange(1, 5+1, 1)
