@@ -8,7 +8,7 @@ y = np.linspace(-5, 5, Ny)
 X, Y = np.meshgrid(x, y)
 
 # Centers of sources
-N_SOURCES = 10
+N_SOURCES = 50
 x0 = np.random.uniform(-5, 5, N_SOURCES)
 y0 = np.random.uniform(-5, 5, N_SOURCES)
 
@@ -33,9 +33,10 @@ plt.show()
 t = np.linspace(0, 50, 100)
 Nt = len(t)
 Z_t = np.zeros((Nt, Ny, Nx))
+phi = np.pi*np.random.uniform(0, 1, N_SOURCES)  # Random phase for each source
 for ti in range(Nt):
     for i in range(1, m + 1):
-        Z_t[ti] += np.sin(np.sqrt((X - x0[i % N_SOURCES])**2 + (Y - y0[i % N_SOURCES])**2) - t[ti])
+        Z_t[ti] += np.sin(np.sqrt((X - x0[i % N_SOURCES])**2 + (Y - y0[i % N_SOURCES])**2) - t[ti] + phi[i % N_SOURCES])
 
 # Plot the result
 fig, axs = plt.subplots(3, 3, figsize=(12, 12))
